@@ -5,63 +5,6 @@
 //  Created by Muna Aiman Al-hajj on 15/11/1445 AH.
 //
 
-//import SwiftUI
-//
-//struct ContentView: View {
-//    @ObservedObject var game = GameModel()
-//
-//    var body: some View {
-//        VStack {
-//            Spacer()
-//            Text(game.gameStatus)
-//                .font(.title)
-//                .padding()
-//
-//            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: 5) {
-//                ForEach(0..<9) { index in
-//                    ZStack {
-//                        Rectangle()
-//                            .foregroundColor(game.isGameActive ? .blue : .gray)
-//                            .opacity(0.8)
-//                            .frame(width: 100, height: 100)
-//                            .cornerRadius(10)
-//                        Text(game.board[index])
-//                            .font(.largeTitle)
-//                            .foregroundColor(.white)
-//                    }
-//                    .onTapGesture {
-//                        game.makeMove(at: index)
-//                    }
-//                }
-//            }
-////            HStack {
-////                TextField("Player X Name", text: $game.playerXName)
-////                    .textFieldStyle(RoundedBorderTextFieldStyle())
-////                    .padding()
-////                TextField("Player O Name", text: $game.playerOName)
-////                    .textFieldStyle(RoundedBorderTextFieldStyle())
-////                    .padding()
-////            }
-//            Spacer()
-//
-//            Button("Restart Game") {
-//                game.resetGame()
-//            }
-//            .padding()
-//            .foregroundColor(.black)
-//            .background(Color.appcolor)
-//            .cornerRadius(10)
-//        }
-//    }
-//}
-//
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
-
-
 import SwiftUI
 
 struct ContentView: View {

@@ -21,6 +21,7 @@ class GameModel: ObservableObject {
             self.playerOName = playerOName
         }
 
+    
     func makeMove(at index: Int) {
         if board[index] == "" && isGameActive {
             board[index] = currentPlayer
