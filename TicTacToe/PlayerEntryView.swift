@@ -62,6 +62,7 @@ struct PlayerEntryView: View {
                 .padding()
                 .navigationTitle("TicTacToe Game")
             }
+            .navigationBarBackButtonHidden(true)
         }
         
     }
